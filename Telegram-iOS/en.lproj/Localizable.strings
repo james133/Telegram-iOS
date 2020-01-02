@@ -111,7 +111,7 @@
 "PUSH_MESSAGE" = "%1$@|sent you a message";
 "PUSH_MESSAGES_1" = "%1$@|sent you a message";
 "PUSH_MESSAGES_any" = "%1$@|sent you %2$d messages";
-"PUSH_MESSAGE_ALBUM" = "%1$@|sent you an album";
+"PUSH_ALBUM" = "%1$@|sent you an album";
 
 "PUSH_CHANNEL_MESSAGE_TEXT" = "%1$@|%2$@";
 "PUSH_CHANNEL_MESSAGE_NOTEXT" = "%1$@|posted a message";
@@ -217,6 +217,9 @@
 "PUSH_CHAT_MESSAGE_GAME_SCORE" = "%1$@ scored %4$@ in game %3$@ in the group %2$@";
 "PUSH_CHAT_MESSAGE_VIDEOS" = "%1$@ sent %3$@ videos to the group %2$@";
 
+"PUSH_REMINDER_TITLE" = "🗓 Reminder";
+"PUSH_SENDER_YOU" = "📅 You";
+
 "LOCAL_MESSAGE_FWDS" = "%1$@ forwarded you %2$d messages";
 "LOCAL_CHANNEL_MESSAGE_FWDS" = "%1$@ posted %2$d forwarded messages";
 "LOCAL_CHAT_MESSAGE_FWDS" = "%1$@ forwarded %2$d messages";
@@ -241,6 +244,7 @@
 "Common.Search" = "Search";
 "Common.More" = "More";
 "Common.Select" = "Select";
+"Items.NOfM" = "%1$@ of %2$@";
 
 // State
 "State.Connecting" = "Connecting...";
@@ -307,6 +311,7 @@
 "LastSeen.HoursAgo_0" = "last seen %@ hours ago";
 "LastSeen.YesterdayAt" = "last seen yesterday at %@";
 "LastSeen.AtDate" = "last seen %@";
+"LastSeen.TodayAt" = "last seen today at %@";
 "LastSeen.Lately" = "last seen recently";
 "LastSeen.WithinAWeek" = "last seen within a week";
 "LastSeen.WithinAMonth" = "last seen within a month";
@@ -500,6 +505,7 @@
 "Notification.JoinedChat" = "%@ joined the group";
 "Notification.JoinedChannel" = "%@ joined the channel";
 "Notification.Invited" = "%@ invited %@";
+"Notification.InvitedMultiple" = "%@ invited %@";
 "Notification.LeftChat" = "%@ left the group";
 "Notification.LeftChannel" = "%@ left the channel";
 "Notification.Kicked" = "%@ removed %@";
@@ -594,6 +600,8 @@
 "UserInfo.AddContact" = "Add Contact";
 "UserInfo.ShareContact" = "Share Contact";
 "UserInfo.StartSecretChat" = "Start Secret Chat";
+"UserInfo.StartSecretChatConfirmation" = "Are you sure you want to start a secret chat with %@?";
+"UserInfo.StartSecretChatStart" = "Start";
 "UserInfo.DeleteContact" = "Delete Contact";
 "UserInfo.CreateNewContact" = "Create New Contact";
 "UserInfo.AddToExisting" = "Add to Existing";
@@ -1001,6 +1009,7 @@
 "Notification.Mute1h" = "Mute for 1 hour";
 "Notification.Mute1hMin" = "Mute for 1h";
 "Conversation.ContextMenuShare" = "Share";
+"Conversation.ContextMenuLookUp" = "Look Up";
 
 "SharedMedia.TitleAll" = "Shared Media";
 
@@ -1532,7 +1541,7 @@
 "Forward.ChannelReadOnly" = "Sorry, you can't post to this channel.";
 
 "Channel.ErrorAccessDenied" = "Sorry, this channel is private.";
-"Group.ErrorAccessDenied" = "Sorry, this channel is private.";
+"Group.ErrorAccessDenied" = "Sorry, this group is private.";
 "Conversation.InputTextBroadcastPlaceholder" = "Broadcast";
 
 "Channel.NotificationLoading" = "Loading...";
@@ -1614,7 +1623,10 @@
 "ShareMenu.Send" = "Send";
 
 "Conversation.ReportSpam" = "Report Spam";
+"Conversation.ReportSpamAndLeave" = "Report Spam and Leave";
 "Conversation.ReportSpamConfirmation" = "Are you sure you want to report spam from this user?";
+"Conversation.ReportSpamGroupConfirmation" = "Are you sure you want to report spam from this group?";
+"Conversation.ReportSpamChannelConfirmation" = "Are you sure you want to report spam from this channel?";
 "SharedMedia.EmptyMusicText" = "All music shared in this chat will appear here.";
 
 "ChatSettings.AutoPlayAnimations" = "Autoplay GIFs";
@@ -2550,6 +2562,7 @@ Unused sets are archived when you add more.";
 "Channel.AdminLog.InfoPanelTitle" = "What Is This?";
 "Channel.AdminLog.InfoPanelAlertTitle" = "What is the event log?";
 "Channel.AdminLog.InfoPanelAlertText" = "This is a list of all service actions taken by the group's members and admins in the last 48 hours.";
+"Channel.AdminLog.InfoPanelChannelAlertText" = "This is a list of all service actions taken by the channel's admins in the last 48 hours.";
 
 "Channel.AdminLog.BanReadMessages" = "Read Messages";
 "Channel.AdminLog.BanSendMessages" = "Send Messages";
@@ -3052,7 +3065,6 @@ Unused sets are archived when you add more.";
 
 "Settings.Appearance" = "Appearance";
 "Appearance.Title" = "Appearance";
-"Appearance.TextSize" = "TEXT SIZE";
 "Appearance.Preview" = "CHAT PREVIEW";
 "Appearance.ColorTheme" = "COLOR THEME";
 "Appearance.ThemeDayClassic" = "Day Classic";
@@ -3859,6 +3871,11 @@ Unused sets are archived when you add more.";
 "GroupPermission.NotAvailableInPublicGroups" = "This permission is not available in public groups.";
 "GroupPermission.AddMembersNotAvailable" = "You don't have persmission to add members.";
 
+"Channel.EditAdmin.PermissionEnabledByDefault" = "This option is permitted for all members in Group Permissions.";
+
+"GroupPermission.EditingDisabled" = "You cannot edit restrictions of this user.";
+"GroupPermission.PermissionDisabledByDefault" = "This option is disabled for all members in Group Permissions.";
+
 "Channel.Management.RemovedBy" = "Removed by %@";
 
 "GroupRemoved.Title" = "Removed Users";
@@ -4047,6 +4064,7 @@ Unused sets are archived when you add more.";
 "LogoutOptions.ContactSupportText" = "Tell us about any issues; logging out doesn't usually help.";
 "LogoutOptions.LogOut" = "Log Out";
 "LogoutOptions.LogOutInfo" = "Remember, logging out kills all your Secret Chats.";
+"LogoutOptions.LogOutWalletInfo" = "Logging out will cancel all your secret chats and unlink your Gram wallet from the app.";
 
 "GroupPermission.PermissionGloballyDisabled" = "This permission is disabled in this group.";
 
@@ -4203,6 +4221,13 @@ Unused sets are archived when you add more.";
 
 "ChatList.DeleteForCurrentUser" = "Delete just for me";
 "ChatList.DeleteForEveryone" = "Delete for me and %@";
+"ChatList.DeleteForEveryoneConfirmationTitle" = "Warning!";
+"ChatList.DeleteForEveryoneConfirmationText" = "This will **delete all messages** in this chat for **both participants**.";
+"ChatList.DeleteForEveryoneConfirmationAction" = "Delete All";
+
+"ChatList.DeleteSavedMessagesConfirmationTitle" = "Warning!";
+"ChatList.DeleteSavedMessagesConfirmationText" = "This will **delete all messages** in this chat.";
+"ChatList.DeleteSavedMessagesConfirmationAction" = "Delete All";
 
 "ChatList.ClearChatConfirmation" = "Are you sure you want to delete all\nmessages in the chat with %@?";
 
@@ -4277,6 +4302,10 @@ Sorry for the inconvenience.";
 "Privacy.AddNewPeer" = "Add Users or Groups";
 "PrivacyPhoneNumberSettings.WhoCanSeeMyPhoneNumber" = "WHO CAN SEE MY PHONE NUMBER";
 "PrivacyPhoneNumberSettings.CustomHelp" = "Users who already have your number saved in the contacts will also see it on Telegram.";
+"PrivacyPhoneNumberSettings.CustomDisabledHelp" = "Users who add your number to their contacts will see it on Telegram only if they are your contacts.";
+
+"PrivacyPhoneNumberSettings.DiscoveryHeader" = "WHO CAN FIND ME BY MY NUMBER";
+
 "Privacy.PhoneNumber" = "Phone Number";
 "PrivacySettings.PhoneNumber" = "Phone Number";
 "Contacts.SearchUsersAndGroupsLabel" = "Search for users and groups";
@@ -4325,6 +4354,8 @@ Any member of this group will be able to see messages in the channel.";
 "Conversation.OpenBotLinkOpen" = "Open";
 
 "TextFormat.Link" = "Link";
+"TextFormat.Strikethrough" = "Strikethrough";
+"TextFormat.Underline" = "Underline";
 
 "TextFormat.AddLinkTitle" = "Add Link";
 "TextFormat.AddLinkText" = "The link will be displayed as \"%@\".";
@@ -4333,3 +4364,879 @@ Any member of this group will be able to see messages in the channel.";
 "Channel.AddBotErrorHaveRights" = "Bots can only be added as administrators.";
 "Channel.AddBotAsAdmin" = "Make Admin";
 "Channel.AddBotErrorNoRights" = "Sorry, bots can only be added to channels as administrators.";
+
+"Appearance.AppIcon" = "App Icon";
+"Appearance.AppIconDefault" = "Default";
+"Appearance.AppIconDefaultX" = "Default X";
+"Appearance.AppIconClassic" = "Classic";
+"Appearance.AppIconClassicX" = "Classic X";
+"Appearance.AppIconFilled" = "Filled";
+"Appearance.AppIconFilledX" = "Filled X";
+
+"Appearance.ThemeCarouselClassic" = "Classic";
+"Appearance.ThemeCarouselDay" = "Day";
+"Appearance.ThemeCarouselNightBlue" = "Night Blue";
+"Appearance.ThemeCarouselNight" = "Monochrome";
+
+"Notification.Exceptions.DeleteAll" = "Delete All";
+"Notification.Exceptions.DeleteAllConfirmation" = "Are you sure you want to delete all exceptions?";
+"Notification.Exceptions.Add" = "Add";
+"Exceptions.AddToExceptions" = "ADD TO EXCEPTIONS";
+
+"Notification.Exceptions.NewException.MessagePreviewHeader" = "MESSAGE PREVIEW";
+"Notification.Exceptions.PreviewAlwaysOn" = "Show Preview";
+"Notification.Exceptions.PreviewAlwaysOff" = "Hide Preview";
+"Notification.Exceptions.RemoveFromExceptions" = "Remove from Exceptions";
+"Conversation.Block" = "Block";
+"Conversation.BlockUser" = "Block User";
+"Conversation.ShareMyPhoneNumber" = "Share My Phone Number";
+"Conversation.ShareMyPhoneNumberConfirmation" = "Are you sure you want to share your phone number %1$@ with %2$@?";
+"Conversation.AddToContacts" = "Add to Contacts";
+"Conversation.AddNameToContacts" = "Add %@ to Contacts";
+
+"AddContact.ContactWillBeSharedAfterMutual" = "Phone number will be visible once %1$@ adds you as a contact.";
+"AddContact.SharedContactException" = "Share My Phone Number";
+"AddContact.SharedContactExceptionInfo" = "You can make your phone visible to %@.";
+"AddContact.StatusSuccess" = "%@ is now in your contacts list.";
+"Conversation.ShareMyPhoneNumber.StatusSuccess" = "%@ can now see your phone number.";
+
+"Group.EditAdmin.TransferOwnership" = "Transfer Group Ownership";
+"Channel.EditAdmin.TransferOwnership" = "Transfer Channel Ownership";
+
+"OwnershipTransfer.SecurityCheck" = "Security Check";
+"OwnershipTransfer.SecurityRequirements" = "Ownership transfers are available if:\n\n• 2-Step verification was enabled for your account more than **7 days** ago.\n\n• You have logged in on this device more than **24 hours** ago.";
+"OwnershipTransfer.ComeBackLater" = "\n\nPlease come back later.";
+"OwnershipTransfer.SetupTwoStepAuth" = "Enable 2-Step Verification";
+
+"Channel.OwnershipTransfer.Title" = "Transfer Channel Ownership";
+"Channel.OwnershipTransfer.DescriptionInfo" = "This will transfer the full **owner rights** for **%1$@** to **%2$@**.\n\nYou will no longer be considered the creator of the channel. The new owner will be free to remove any of your admin privileges or even ban you.";
+"Group.OwnershipTransfer.Title" = "Transfer Group Ownership";
+"Group.OwnershipTransfer.DescriptionInfo" = "This will transfer the full **owner rights** for **%1$@** to **%2$@**.\n\nYou will no longer be considered the creator of the group. The new owner will be free to remove any of your admin privileges or even ban you.";
+"Channel.OwnershipTransfer.ChangeOwner" = "Change Owner";
+
+"Channel.OwnershipTransfer.ErrorPublicChannelsTooMuch" = "Sorry, the target user has too many public groups or channels already. Please ask them to make one of their existing groups or channels private first.";
+"Group.OwnershipTransfer.ErrorLocatedGroupsTooMuch" = "Sorry, the target user has too many location-based groups already. Please ask them to delete or transfer one of their existing ones first.";
+
+"Group.OwnershipTransfer.ErrorAdminsTooMuch" = "Sorry, this group has too many admins and the new owner can't be added. Please remove one of the existing admins first.";
+"Channel.OwnershipTransfer.ErrorAdminsTooMuch" = "Sorry, this channel has too many admins and the new owner can't be added. Please remove one of the existing admins first.";
+
+"Group.OwnershipTransfer.ErrorPrivacyRestricted" = "Sorry, this user is not a member of this group and their privacy settings prevent you from adding them manually.";
+"Channel.OwnershipTransfer.ErrorPrivacyRestricted" = "Sorry, this user is not a member of this channel and their privacy settings prevent you from adding them manually.";
+
+"Channel.OwnershipTransfer.EnterPassword" = "Enter Password";
+"Channel.OwnershipTransfer.EnterPasswordText" = "Please enter your 2-Step Verification password to complete the transfer.";
+"Channel.OwnershipTransfer.PasswordPlaceholder" = "Password";
+
+"Channel.OwnershipTransfer.TransferCompleted" = "**%1$@** is now the owner of **%2$@**";
+
+"Contacts.AddPeopleNearby" = "Add People Nearby";
+
+"PeopleNearby.Title" = "People Nearby";
+"PeopleNearby.Description" = "Ask your friend nearby to open this page to exchange phone numbers.";
+"PeopleNearby.Users" = "People Nearby";
+"PeopleNearby.UsersEmpty" = "Looking for users around you...";
+"PeopleNearby.Groups" = "Groups Nearby";
+"PeopleNearby.CreateGroup" = "Create a Group Here";
+"PeopleNearby.NoMembers" = "no members";
+
+"Channel.Management.LabelOwner" = "Owner";
+"Channel.Management.LabelAdministrator" = "Administrator";
+"ContactInfo.PhoneNumberHidden" = "Hidden";
+
+"Common.ActionNotAllowedError" = "Sorry, you are not allowed to do this.";
+
+"Group.Location.Title" = "Location";
+"Group.Location.ChangeLocation" = "Change Location";
+"Group.Location.Info" = "People can find your group using People Nearby section.";
+
+"Channel.AdminLog.MessageTransferedName" = "transferred ownership to %1$@";
+"Channel.AdminLog.MessageTransferedNameUsername" = "transferred ownership to %1$@ (%2$@)";
+
+"Channel.AdminLog.MessageChangedGroupGeoLocation" = "changed group location to \"%@\"";
+
+"Map.SetThisLocation" = "Set This Location";
+
+"Permissions.PeopleNearbyTitle.v0" = "People Nearby";
+"Permissions.PeopleNearbyText.v0" = "Use this section to quickly add people near you and discover nearby group chats.\n\nPlease allow location access\nto start using this feature.";
+"Permissions.PeopleNearbyAllow.v0" = "Allow Access";
+"Permissions.PeopleNearbyAllowInSettings.v0" = "Allow in Settings";
+
+"Conversation.ReportGroupLocation" = "Group unrelated to location?";
+"ReportGroupLocation.Title" = "Report Unrelated Group";
+"ReportGroupLocation.Text" = "Please tell us if this group is not related to this location.";
+"ReportGroupLocation.Report" = "Report";
+
+"LocalGroup.Title" = "Create a Local Group";
+"LocalGroup.Text" = "Anyone close to this location (neighbors, co-workers, fellow students, event attendees, visitors of a venue) will see your group in the People Nearby section.";
+"LocalGroup.ButtonTitle" = "Start Group";
+"LocalGroup.IrrelevantWarning" = "If you start an unrelated group at this location, you may get restricted in creating new location-based groups.";
+
+"GroupInfo.Location" = "Location";
+"GroupInfo.PublicLink" = "Public Link";
+"GroupInfo.PublicLinkAdd" = "Add";
+
+"Group.PublicLink.Title" = "Public Link";
+"Group.PublicLink.Placeholder" = "link";
+"Group.PublicLink.Info" = "People can share this link with others and find your group using Telegram search.\n\nYou can use **a-z**, **0-9** and underscores. Minimum length is **5** characters.";
+
+"CreateGroup.ErrorLocatedGroupsTooMuch" = "Sorry, you have too many location-based groups already. Please delete one of your existing ones first.";
+
+"GroupInfo.LabelOwner" = "owner";
+
+"Activity.RemindAboutGroup" = "Send message to %@";
+"Activity.RemindAboutUser" = "Send message to %@";
+"Activity.RemindAboutChannel" = "Read %@";
+
+"CreateGroup.ChannelsTooMuch" = "Sorry, you are a member of too many groups and channels. Please leave some before creating a new one.";
+"Join.ChannelsTooMuch" = "Sorry, you are a member of too many groups and channels. Please leave some before joining one.";
+"Invite.ChannelsTooMuch" = "Sorry, the target user is a member of too many groups and channels. Please ask them to leave some first.";
+
+"Appearance.TintAllColors" = "Tint All Colors";
+
+"Contacts.DeselectAll" = "Deselect All";
+
+"Channel.TooMuchBots" = "Sorry, there are already too many bots in this group. Please remove some of the bots you're not using first.";
+"Channel.BotDoesntSupportGroups" = "Sorry, this bot is telling us it doesn't want to be added to groups. You can't add this bot unless its developers change their mind.";
+
+"StickerPacksSettings.AnimatedStickers" = "Loop Animated Stickers";
+"StickerPacksSettings.AnimatedStickersInfo" = "Animated stickers will play in chat continuously.";
+"GroupInfo.Permissions.SlowmodeHeader" = "SLOWMODE";
+"GroupInfo.Permissions.SlowmodeInfo" = "Members will be restricted to send one message per this interval.";
+"Channel.AdminLog.DisabledSlowmode" = "%@ disabled slowmode";
+"Channel.AdminLog.SetSlowmode" = "%1$@ set slowmode to %2$@";
+
+"GroupInfo.Permissions.EditingDisabled" = "You cannot edit this permission.";
+
+"Chat.SlowmodeTooltip" = "Slowmode is enabled. You can send\nyour next message in %@.";
+"Chat.SlowmodeTooltipPending" = "Slowmode is enabled. You can't send more than one message at once.";
+"Chat.AttachmentLimitReached" = "You can't select more items.";
+"Chat.SlowmodeAttachmentLimitReached" = "Slowmode is enabled. You can't select more items.";
+"Chat.AttachmentMultipleFilesDisabled" = "Slowmode is enabled. You can't send multiple files at once.";
+"Chat.AttachmentMultipleForwardDisabled" = "Slowmode is enabled. You can't forward multiple messages at once.";
+"Chat.MultipleTextMessagesDisabled" = "Slowmode is enabled. You can't send multiple messages at once.";
+"Share.MultipleMessagesDisabled" = "Slowmode is enabled. You can't send multiple messages at once.";
+"Chat.SlowmodeSendError" = "Slowmode is enabled.";
+"StickerPacksSettings.AnimatedStickersInfo" = "Animated stickers in a chat will play continuously.";
+
+"Conversation.Owner" = "owner";
+
+"Group.EditAdmin.RankTitle" = "CUSTOM TITLE";
+"Group.EditAdmin.RankInfo" = "A title that will be shown instead of '%@'.";
+"Group.EditAdmin.RankOwnerPlaceholder" = "owner";
+"Group.EditAdmin.RankAdminPlaceholder" = "admin";
+
+"Conversation.SendMessage.SendSilently" = "Send Without Sound";
+"Conversation.SendMessage.ScheduleMessage" = "Schedule Message";
+
+"Appearance.ThemeCarouselTintedNight" = "Tinted Night";
+"Appearance.ThemeCarouselNewNight" = "Night";
+
+"Channel.AdminLog.MessageRankName" = "changed custom title for %1$@:\n%2$@";
+"Channel.AdminLog.MessageRankUsername" = "changed custom title for %1$@ (%2$@):\n%3$@";
+"Channel.AdminLog.MessageRank" = "changed custom title:\n%1$@";
+
+"VoiceOver.Editing.ClearText" = "Clear text";
+"VoiceOver.Recording.StopAndPreview" = "Stop and preview";
+"VoiceOver.Media.PlaybackRate" = "Playback rate";
+"VoiceOver.Media.PlaybackRateNormal" = "Normal";
+"VoiceOver.Media.PlaybackRateFast" = "Fast";
+"VoiceOver.Media.PlaybackRateChange" = "Double tap to change";
+"VoiceOver.Media.PlaybackStop" = "Stop playback";
+"VoiceOver.Media.PlaybackPlay" = "Play";
+"VoiceOver.Media.PlaybackPause" = "Pause";
+"VoiceOver.Navigation.Compose" = "Compose";
+"VoiceOver.Navigation.Search" = "Search";
+"VoiceOver.Navigation.ProxySettings" = "Proxy settings";
+"VoiceOver.DiscardPreparedContent" = "Discard";
+"VoiceOver.AttachMedia" = "Send media";
+"VoiceOver.Chat.RecordPreviewVoiceMessage" = "Preview voice message";
+"VoiceOver.Chat.RecordModeVoiceMessage" = "Voice message";
+"VoiceOver.Chat.RecordModeVoiceMessageInfo" = "Double tap and hold to record voice message. Slide up to pin recording, slide left to cancel. Double tap to switch to video.";
+"VoiceOver.Chat.RecordModeVideoMessage" = "Video message";
+"VoiceOver.Chat.RecordModeVideoMessageInfo" = "Double tap and hold to record video message. Slide up to pin recording, slide left to cancel. Double tap to switch to audio.";
+"VoiceOver.Chat.Message" = "Message";
+"VoiceOver.Chat.YourMessage" = "Your message";
+"VoiceOver.Chat.ReplyFrom" = "Reply to message from: %@";
+"VoiceOver.Chat.Reply" = "Reply to message";
+"VoiceOver.Chat.ReplyToYourMessage" = "Reply to your message";
+"VoiceOver.Chat.ForwardedFrom" = "Forwarded from: %@";
+"VoiceOver.Chat.ForwardedFromYou" = "Forwarded from you";
+"VoiceOver.Chat.PhotoFrom" = "Photo, from: %@";
+"VoiceOver.Chat.Photo" = "Photo";
+"VoiceOver.Chat.YourPhoto" = "Your photo";
+"VoiceOver.Chat.VoiceMessageFrom" = "Voice message, from: %@";
+"VoiceOver.Chat.VoiceMessage" = "Voice message";
+"VoiceOver.Chat.YourVoiceMessage" = "Your voice message";
+"VoiceOver.Chat.MusicFrom" = "Music file, from: %@";
+"VoiceOver.Chat.Music" = "Music message";
+"VoiceOver.Chat.YourMusic" = "Your music message";
+"VoiceOver.Chat.VideoFrom" = "Video, from: %@";
+"VoiceOver.Chat.Video" = "Video";
+"VoiceOver.Chat.YourVideo" = "Your video";
+"VoiceOver.Chat.VideoMessageFrom" = "Video message, from: %@";
+"VoiceOver.Chat.VideoMessage" = "Video message";
+"VoiceOver.Chat.YourVideoMessage" = "Your video message";
+"VoiceOver.Chat.FileFrom" = "File, from: %@";
+"VoiceOver.Chat.File" = "File";
+"VoiceOver.Chat.YourFile" = "Your file";
+"VoiceOver.Chat.ContactFrom" = "Shared contact, from: %@";
+"VoiceOver.Chat.Contact" = "Shared contact";
+"VoiceOver.Chat.ContactPhoneNumberCount_1" = "%@ phone number";
+"VoiceOver.Chat.ContactPhoneNumberCount_any" = "%@ phone numbers";
+"VoiceOver.Chat.ContactPhoneNumber" = "Phone number";
+"VoiceOver.Chat.ContactEmailCount_1" = "%@ email address";
+"VoiceOver.Chat.ContactEmailCount_any" = "%@ email addresses";
+"VoiceOver.Chat.ContactEmail" = "Email";
+"VoiceOver.Chat.ContactOrganization" = "Organization: %@";
+"VoiceOver.Chat.YourContact" = "Your shared contact";
+"VoiceOver.Chat.AnonymousPollFrom" = "Anonymous poll, from: %@";
+"VoiceOver.Chat.AnonymousPoll" = "Anonymous poll";
+"VoiceOver.Chat.YourAnonymousPoll" = "Your Anonymous poll";
+"VoiceOver.Chat.PollOptionCount_1" = "%@ option:";
+"VoiceOver.Chat.PollOptionCount_any" = "%@ options:";
+"VoiceOver.Chat.PollVotes_1" = "%@ vote";
+"VoiceOver.Chat.PollVotes_any" = "%@ votes";
+"VoiceOver.Chat.PollNoVotes" = "No votes";
+"VoiceOver.Chat.PollFinalResults" = "Final results";
+"VoiceOver.Chat.OptionSelected" = "selected";
+"VoiceOver.Chat.PagePreview" = "Page preview";
+"VoiceOver.Chat.Title" = "Title: %@";
+"VoiceOver.Chat.Caption" = "Caption: %@";
+"VoiceOver.Chat.Duration" = "Duration: %@";
+"VoiceOver.Chat.Size" = "Size: %@";
+"VoiceOver.Chat.MusicTitle" = "%1$@, by %2$@";
+"VoiceOver.Chat.PlayHint" = "Double tap to play";
+"VoiceOver.Chat.OpenHint" = "Double tap to open";
+"VoiceOver.Chat.OpenLinkHint" = "Double tap to open link";
+"VoiceOver.Chat.SeenByRecipient" = "Seen by recipient";
+"VoiceOver.Chat.SeenByRecipients" = "Seen by recipients";
+"VoiceOver.Chat.Selected" = "Selected";
+"VoiceOver.MessageContextDelete" = "Delete";
+"VoiceOver.MessageContextReport" = "Report";
+"VoiceOver.MessageContextForward" = "Forward";
+"VoiceOver.MessageContextShare" = "Share";
+"VoiceOver.MessageContextSend" = "Send";
+"VoiceOver.MessageContextReply" = "Reply";
+"VoiceOver.MessageContextOpenMessageMenu" = "Open message menu";
+
+"ProxyServer.VoiceOver.Active" = "Active";
+
+"Conversation.ScheduleMessage.Title" = "Schedule Message";
+"Conversation.ScheduleMessage.SendToday" = "Send today at %@";
+"Conversation.ScheduleMessage.SendTomorrow" = "Send tomorrow at %@";
+"Conversation.ScheduleMessage.SendOn" = "Send on %@ at %@";
+
+"Conversation.SetReminder.Title" = "Set a Reminder";
+"Conversation.SetReminder.RemindToday" = "Remind today at %@";
+"Conversation.SetReminder.RemindTomorrow" = "Remind tomorrow at %@";
+"Conversation.SetReminder.RemindOn" = "Remind on %@ at %@";
+
+"ScheduledMessages.Title" = "Scheduled Messages";
+"ScheduledMessages.RemindersTitle" = "Reminders";
+"ScheduledMessages.ScheduledDate" = "Scheduled for %@";
+"ScheduledMessages.ScheduledToday" = "Scheduled for today";
+"ScheduledMessages.SendNow" = "Send Now";
+"ScheduledMessages.EditTime" = "Reschedule";
+"ScheduledMessages.ClearAll" = "Clear All";
+"ScheduledMessages.ClearAllConfirmation" = "Clear Scheduled Messages";
+"ScheduledMessages.Delete" = "Delete Scheduled Message";
+"ScheduledMessages.DeleteMany" = "Delete Scheduled Messages";
+"ScheduledMessages.EmptyPlaceholder" = "No scheduled messages here yet...";
+"ScheduledMessages.BotActionUnavailable" = "This action will become available after the message is published.";
+"ScheduledMessages.PollUnavailable" = "Voting will become available after the message is published.";
+"ScheduledMessages.ReminderNotification" = "📅 Reminder";
+
+"Conversation.SendMessage.SetReminder" = "Set a Reminder";
+
+"Conversation.SelectedMessages_1" = "%@ Selected";
+"Conversation.SelectedMessages_2" = "%@ Selected";
+"Conversation.SelectedMessages_3_10" = "%@ Selected";
+"Conversation.SelectedMessages_any" = "%@ Selected";
+"Conversation.SelectedMessages_many" = "%@ Selected";
+"Conversation.SelectedMessages_0" = "%@ Selected";
+
+"AccentColor.Title" = "Accent Color";
+
+"Appearance.ThemePreview.ChatList.1.Name" = "Alicia Torreaux";
+"Appearance.ThemePreview.ChatList.1.Text" = "Bob says hi. 😊 ❤️ 😱";
+"Appearance.ThemePreview.ChatList.2.Name" = "Roberto";
+"Appearance.ThemePreview.ChatList.2.Text" = "Say hello to Alice 👋";
+"Appearance.ThemePreview.ChatList.3.Name" = "Campus Public Chat";
+"Appearance.ThemePreview.ChatList.3.AuthorName" = "Jennie Alpha";
+"Appearance.ThemePreview.ChatList.3.Text" = "We just reached 2,500 members! WOO!";
+"Appearance.ThemePreview.ChatList.4.Name" = "Veronica";
+"Appearance.ThemePreview.ChatList.4.Text" = "Table for four, 2PM. Be there.";
+"Appearance.ThemePreview.ChatList.5.Name" = "Animal Videos";
+"Appearance.ThemePreview.ChatList.5.Text" = "Vote now! Moar cat videos in this channel?";
+"Appearance.ThemePreview.ChatList.6.Name" = "Little Sister";
+"Appearance.ThemePreview.ChatList.6.Text" = "Don't tell mom yet, but I got the job! I'm going to ROME!";
+"Appearance.ThemePreview.ChatList.7.Name" = "Jennie Alpha";
+"Appearance.ThemePreview.ChatList.7.Text" = "🖼 Check these out";
+
+"Appearance.ThemePreview.Chat.1.Text" = "Does he want me to, to turn from the right or turn from the left? 🤔";
+"Appearance.ThemePreview.Chat.2.ReplyName" = "Bob Harris";
+"Appearance.ThemePreview.Chat.2.Text" = "Right side. And, uh, with intensity.";
+"Appearance.ThemePreview.Chat.3.Text" = "Is that everything? It seemed like he said quite a bit more than that. 😯";
+"Appearance.ThemePreview.Chat.3.TextWithLink" = "Is that everything? It seemed like he said [quite a bit more] than that. 😯";
+
+"Appearance.ThemePreview.Chat.4.Text" = "For relaxing times, make it Suntory time. 😎";
+"Appearance.ThemePreview.Chat.5.Text" = "He wants you to turn, look in camera. O.K.?";
+"Appearance.ThemePreview.Chat.6.Text" = "That’s all he said?";
+"Appearance.ThemePreview.Chat.7.Text" = "Yes, turn to camera.";
+
+"GroupInfo.Permissions.SlowmodeValue.Off" = "Off";
+
+"Undo.ScheduledMessagesCleared" = "Scheduled messages cleared";
+
+"Appearance.CreateTheme" = "Create New Theme";
+"Appearance.EditTheme" = "Edit Theme";
+"Appearance.ShareTheme" = "Share";
+"Appearance.RemoveTheme" = "Remove";
+"Appearance.RemoveThemeConfirmation" = "Remove Theme";
+
+"Conversation.Theme" = "Color Theme";
+"Conversation.ViewTheme" = "VIEW THEME";
+
+"Message.Theme" = "Color Theme";
+
+"EditTheme.CreateTitle" = "Create Theme";
+"EditTheme.EditTitle" = "Edit Theme";
+"EditTheme.Title" = "Theme Name";
+"EditTheme.ShortLink" = "link";
+"EditTheme.Preview" = "CHAT PREVIEW";
+"EditTheme.UploadNewTheme" = "Create from File...";
+"EditTheme.UploadEditedTheme" = "Update from File...";
+"EditTheme.ThemeTemplateAlertTitle" = "New Theme Added";
+"EditTheme.ThemeTemplateAlertText" = "Press and hold on your theme to edit it or get a sharing link. Users who install your theme will get automatic updates each time you change it.\n\nFor advanced editing purposes, you can find a file with your theme in Saved Messages.";
+"EditTheme.FileReadError" = "Invalid theme file";
+
+"EditTheme.Create.TopInfo" = "The theme will be based on your currently selected colors and wallpaper.";
+"EditTheme.Create.BottomInfo" = "You can also use a manually edited custom theme file.";
+
+"EditTheme.Expand.TopInfo" = "The theme will be based on your currently selected colors and wallpaper.";
+"EditTheme.Expand.BottomInfo" = "You can also use a manually edited custom theme file.";
+
+"EditTheme.Edit.TopInfo" = "Your theme will be updated for all users each time you change it. Anyone can install it using this link.\n\nTheme links must be at least **5** characters long and can use **a-z**, **0-9** and underscores.";
+"EditTheme.Edit.BottomInfo" = "You can select a new file to update the theme. It will be updated for all users.";
+
+"EditTheme.Create.Preview.IncomingReplyName" = "Bob";
+"EditTheme.Create.Preview.IncomingReplyText" = "How does it work?";
+"EditTheme.Create.Preview.IncomingText" = "Use your current colors";
+"EditTheme.Create.Preview.OutgoingText" = "Or upload a theme file";
+
+"EditTheme.Expand.Preview.IncomingReplyName" = "Bob";
+"EditTheme.Expand.Preview.IncomingReplyText" = "How does it work?";
+"EditTheme.Expand.Preview.IncomingText" = "Use your current colors";
+"EditTheme.Expand.Preview.OutgoingText" = "Or upload a theme file";
+
+"EditTheme.Edit.Preview.IncomingReplyName" = "Bob";
+"EditTheme.Edit.Preview.IncomingReplyText" = "How does it work?";
+"EditTheme.Edit.Preview.IncomingText" = "Use your current colors";
+"EditTheme.Edit.Preview.OutgoingText" = "Or upload a theme file";
+
+"EditTheme.ErrorLinkTaken" = "Sorry, this link is already taken";
+"EditTheme.ErrorInvalidCharacters" = "Sorry, this link is invalid.";
+
+"Wallpaper.ErrorNotFound" = "Sorry, this chat background doesn't seem to exist.";
+"Theme.ErrorNotFound" = "Sorry, this color theme doesn't seem to exist.";
+"Theme.Unsupported" = "Sorry, this color theme doesn't support your device yet.";
+
+"Theme.UsersCount_1" = "%@ person is using this theme";
+"Theme.UsersCount_2" = "%@ people are using this theme";
+"Theme.UsersCount_3_10" = "%@ people are using this theme";
+"Theme.UsersCount_any" = "%@ people are using this theme";
+"Theme.UsersCount_many" = "%@ people are using this theme";
+"Theme.UsersCount_0" = "%@ people are using this theme";
+
+"Conversation.SendMessageErrorTooMuchScheduled" = "Sorry, you can not schedule more than 100 messages.";
+
+"ChatList.Context.MarkAllAsRead" = "Mark All as Read";
+"ChatList.Context.HideArchive" = "Hide Above the List";
+"ChatList.Context.UnhideArchive" = "Pin in the list";
+"ChatList.Context.RemoveFromRecents" = "Clear from Recents";
+"ChatList.Context.AddToContacts" = "Add to Contacts";
+"ChatList.Context.MarkAsRead" = "Mark as Read";
+"ChatList.Context.MarkAsUnread" = "Mark as Unread";
+"ChatList.Context.Archive" = "Archive";
+"ChatList.Context.Unarchive" = "Unarchive";
+"ChatList.Context.Pin" = "Pin";
+"ChatList.Context.Unpin" = "Unpin";
+"ChatList.Context.Mute" = "Mute";
+"ChatList.Context.Unmute" = "Unmute";
+"ChatList.Context.JoinChannel" = "Join Channel";
+"ChatList.Context.Delete" = "Delete";
+
+"ContactList.Context.SendMessage" = "Send Message";
+"ContactList.Context.StartSecretChat" = "Start Secret Chat";
+"ContactList.Context.Call" = "Call";
+
+"Theme.Context.Apply" = "Apply";
+
+"Settings.Context.Logout" = "Logout";
+
+"Channel.EditAdmin.PermissionDeleteMessagesOfOthers" = "Delete Messages of Others";
+"Channel.AdminLog.CanDeleteMessagesOfOthers" = "Delete Messages of Others";
+
+"ChatSearch.ResultsTooltip" = "Tap to view as a list.";
+
+"Wallet.Updated.JustNow" = "updated just now";
+"Wallet.Updated.MinutesAgo_0" = "%@ minutes ago"; //three to ten
+"Wallet.Updated.MinutesAgo_1" = "1 minute ago"; //one
+"Wallet.Updated.MinutesAgo_2" = "2 minutes ago"; //two
+"Wallet.Updated.MinutesAgo_3_10" = "%@ minutes ago"; //three to ten
+"Wallet.Updated.MinutesAgo_many" = "%@ minutes ago"; // more than ten
+"Wallet.Updated.MinutesAgo_any" = "%@ minutes ago"; // more than ten
+"Wallet.Updated.HoursAgo_0" = "%@ hours ago";
+"Wallet.Updated.HoursAgo_1" = "1 hour ago";
+"Wallet.Updated.HoursAgo_2" = "2 hours ago";
+"Wallet.Updated.HoursAgo_3_10" = "%@ hours ago";
+"Wallet.Updated.HoursAgo_any" = "%@ hours ago";
+"Wallet.Updated.HoursAgo_many" = "%@ hours ago";
+"Wallet.Updated.HoursAgo_0" = "%@ hours ago";
+"Wallet.Updated.YesterdayAt" = "yesterday at %@";
+"Wallet.Updated.AtDate" = "%@";
+"Wallet.Updated.TodayAt" = "today at %@";
+
+"Wallet.Info.WalletCreated" = "Wallet Created";
+"Wallet.Info.Address" = "Your wallet address";
+"Wallet.Info.YourBalance" = "your balance";
+"Wallet.Info.Receive" = "Receive";
+"Wallet.Info.ReceiveGrams" = "Receive Grams";
+"Wallet.Info.Send" = "Send";
+"Wallet.Info.RefreshErrorTitle" = "No network";
+"Wallet.Info.RefreshErrorText" = "Couldn't refresh balance. Please make sure your internet connection is working and try again.";
+"Wallet.Info.RefreshErrorNetworkText" = "Wallet state can not be retrieved at this time. Please try again later.";
+"Wallet.Info.UnknownTransaction" = "Empty Transaction";
+"Wallet.Info.TransactionTo" = "to";
+"Wallet.Info.TransactionFrom" = "from";
+"Wallet.Info.Updating" = "updating";
+"Wallet.Info.TransactionBlockchainFee" = "%@ blockchain fees";
+"Wallet.Info.TransactionPendingHeader" = "Pending";
+"Wallet.Qr.ScanCode" = "Scan QR Code";
+"Wallet.Qr.Title" = "QR Code";
+"Wallet.Receive.Title" = "Receive Grams";
+"Wallet.Receive.AddressHeader" = "YOUR WALLET ADDRESS";
+"Wallet.Receive.InvoiceUrlHeader" = "INVOICE URL";
+"Wallet.Receive.CopyAddress" = "Copy Wallet Address";
+"Wallet.Receive.CopyInvoiceUrl" = "Copy Invoice URL";
+"Wallet.Receive.ShareAddress" = "Share Wallet Address";
+"Wallet.Receive.ShareInvoiceUrl" = "Share Invoice URL";
+"Wallet.Receive.ShareUrlInfo" = "Share this link with other Gram wallet owners to receive Grams from them. Note: this link won't work for real Grams.";
+"Wallet.Receive.AmountHeader" = "AMOUNT";
+"Wallet.Receive.AmountText" = "Grams to receive";
+"Wallet.Receive.AmountInfo" = "You can specify the amount and purpose of the payment to save the sender some time.";
+"Wallet.Receive.CommentHeader" = "COMMENT (OPTIONAL)";
+"Wallet.Receive.CommentInfo" = "Description of the payment";
+"Wallet.Receive.AddressCopied" = "Address copied to clipboard.";
+"Wallet.Receive.InvoiceUrlCopied" = "Invoice URL copied to clipboard.";
+"Wallet.Send.Title" = "Send Grams";
+"Wallet.Send.AddressHeader" = "RECIPIENT WALLET ADDRESS";
+"Wallet.Send.AddressText" = "Enter wallet address...";
+"Wallet.Send.AddressInfo" = "Paste the 48-letter address of the recipient here or ask them to send you a ton:// link.";
+"Wallet.Send.Balance" = "Balance: %@";
+"Wallet.Send.AmountText" = "Grams to send";
+"Wallet.Send.Confirmation" = "Confirmation";
+"Wallet.Send.ConfirmationText" = "Do you want to send **%1$@** Grams to\n\n%2$@?\n\nBlockchain fees: ~%3$@ grams";
+"Wallet.Send.ConfirmationConfirm" = "Confirm";
+"Wallet.Send.Send" = "Send";
+"Wallet.Send.OwnAddressAlertTitle" = "Warning";
+"Wallet.Send.OwnAddressAlertText" = "Sending Grams from a wallet to the same wallet doesn't make sense, you will simply waste a portion of the value on blockchain fees.";
+"Wallet.Send.OwnAddressAlertProceed" = "Proceed";
+"Wallet.Send.TransactionInProgress" = "Please wait until the current transaction is completed.";
+"Wallet.Send.SyncInProgress" = "Please wait while the wallet finishes syncing with the TON Blockchain.";
+"Wallet.Settings.Title" = "Settings";
+"Wallet.Settings.Configuration" = "Server Settings";
+"Wallet.Settings.ConfigurationInfo" = "Advanced Settings";
+"Wallet.Settings.BackupWallet" = "Backup Wallet";
+"Wallet.Settings.DeleteWallet" = "Delete Wallet";
+"Wallet.Settings.DeleteWalletInfo" = "This will disconnect the wallet from this app. You will be able to restore your wallet using 24 secret words – or import another wallet.\n\nGram Wallets are located in the decentralized TON Blockchain. If you want a wallet to be deleted, simply transfer all the grams from it and leave it empty.";
+"Wallet.Intro.NotNow" = "Not Now";
+"Wallet.Intro.ImportExisting" = "Import existing wallet";
+"Wallet.Intro.CreateErrorTitle" = "An Error Occurred";
+"Wallet.Intro.CreateErrorText" = "Sorry. Please try again.";
+"Wallet.Intro.Title" = "Gram Wallet";
+"AppWallet.Intro.Text" = "The gram wallet allows you to make fast and secure blockchain-based payments without intermediaries.";
+"Wallet.Intro.Text" = "Gram wallet allows you to make fast and secure blockchain-based payments without intermediaries.";
+"Wallet.Intro.CreateWallet" = "Create My Wallet";
+"Wallet.Intro.Terms" = "By creating a wallet you accept the\n[Terms of Conditions]().";
+"TelegramWallet.Intro.TermsUrl" = "https://telegram.org/tos/wallet";
+"Wallet.Created.Title" = "Congratulations";
+"Wallet.Created.Text" = "Your Gram wallet has just been created. Only you control it.\n\nTo be able to always have access to it, please write down your secret words and\nset up a secure passcode.";
+"Wallet.Created.Proceed" = "Proceed";
+"Wallet.Created.ExportErrorTitle" = "Error";
+"Wallet.Created.ExportErrorText" = "Encryption error. Please make sure you have enabled a device passcode in iOS settings and try again.";
+"Wallet.Completed.Title" = "Ready to go!";
+"Wallet.Completed.Text" = "You’re all set. Now you have a wallet that only you control - directly, without middlemen or bankers.";
+"Wallet.Completed.ViewWallet" = "View My Wallet";
+"Wallet.RestoreFailed.Title" = "Too Bad";
+"Wallet.RestoreFailed.Text" = "Without the secret words, you can't\nrestore access to your wallet.";
+"Wallet.RestoreFailed.CreateWallet" = "Create a New Wallet";
+"Wallet.RestoreFailed.EnterWords" = "Enter 24 words";
+"Wallet.Sending.Title" = "Sending Grams";
+"Wallet.Sending.Text" = "Please wait a few seconds for your transaction to be processed...";
+"Wallet.Sending.Title" = "Sending Grams";
+"Wallet.Sent.Title" = "Done!";
+"Wallet.Sent.Text" = "**%@ Grams** have been sent.";
+"Wallet.Sent.ViewWallet" = "View My Wallet";
+"Wallet.SecureStorageNotAvailable.Title" = "Set a Passcode";
+"Wallet.SecureStorageNotAvailable.Text" = "Please set up a Passcode on your device to enable secure payments with your Gram wallet.";
+"Wallet.SecureStorageReset.Title" = "Security Settings Have Changed";
+"Wallet.SecureStorageReset.BiometryTouchId" = "Touch ID";
+"Wallet.SecureStorageReset.BiometryFaceId" = "Face ID";
+"Wallet.SecureStorageReset.BiometryText" = "Unfortunately, your wallet is no longer available because your system Passcode or %@ has been turned off. Please enable them before proceeding.";
+"Wallet.SecureStorageReset.PasscodeText" = "Unfortunately, your wallet is no longer available because your system Passcode has been turned off. Please enable it before proceeding.";
+"Wallet.SecureStorageChanged.BiometryText" = "Unfortunately, your wallet is no longer available due to the change in your system security settings (Passcode/%@). To restore your wallet, tap \"Import existing wallet\".";
+"Wallet.SecureStorageChanged.PasscodeText" = "Unfortunately, your wallet is no longer available due to the change in your system security settings (Passcode). To restore your wallet, tap \"Import existing wallet\".";
+"Wallet.SecureStorageChanged.ImportWallet" = "Import Existing Wallet";
+"Wallet.SecureStorageChanged.CreateWallet" = "Create New Wallet";
+"Wallet.TransactionInfo.Title" = "Transaction";
+"Wallet.TransactionInfo.NoAddress" = "No Address";
+"Wallet.TransactionInfo.RecipientHeader" = "RECIPIENT";
+"Wallet.TransactionInfo.SenderHeader" = "SENDER";
+"Wallet.TransactionInfo.CopyAddress" = "Copy Wallet Address";
+"Wallet.TransactionInfo.AddressCopied" = "Address copied to clipboard.";
+"Wallet.TransactionInfo.SendGrams" = "Send Grams to This Address";
+"Wallet.TransactionInfo.CommentHeader" = "COMMENT";
+"Wallet.TransactionInfo.StorageFeeHeader" = "STORAGE FEE";
+"Wallet.TransactionInfo.OtherFeeHeader" = "TRANSACTION FEE";
+"Wallet.TransactionInfo.StorageFeeInfo" = "Blockchain validators collect a tiny fee for storing information about your decentralized wallet and processing your transactions.";
+"Wallet.TransactionInfo.StorageFeeInfoUrl" = "Blockchain validators collect a tiny fee for storing information about your decentralized wallet and processing your transactions. [More info]()";
+"Wallet.TransactionInfo.OtherFeeInfo" = "Blockchain validators collect a tiny fee for processing your decentralized transactions.";
+"Wallet.TransactionInfo.OtherFeeInfoUrl" = "Blockchain validators collect a tiny fee for processing your decentralized transactions. [More info]()";
+"AppWallet.TransactionInfo.FeeInfoURL" = "https://telegram.org/wallet/fee";
+"Wallet.WordCheck.Title" = "Test Time!";
+"Wallet.WordCheck.Text" = "Let’s check that you wrote them down correctly. Please enter the words\n**%1$@**, **%2$@** and **%3$@**";
+"Wallet.WordCheck.Continue" = "Continue";
+"Wallet.WordCheck.IncorrectHeader" = "Incorrect words!";
+"Wallet.WordCheck.IncorrectText" = "The secret words you have entered do not match the ones in the list.";
+"Wallet.WordCheck.TryAgain" = "Try Again";
+"Wallet.WordCheck.ViewWords" = "View Words";
+"Wallet.WordImport.Title" = "24 Secret Words";
+"Wallet.WordImport.Text" = "Please restore access to your wallet by\nentering the 24 secret words you wrote down when creating the wallet.";
+"Wallet.WordImport.Continue" = "Continue";
+"Wallet.WordImport.CanNotRemember" = "I don't have them";
+"Wallet.WordImport.IncorrectTitle" = "Incorrect words";
+"Wallet.WordImport.IncorrectText" = "Sorry, you have entered incorrect secret words. Please double check and try again.";
+"Wallet.Words.Title" = "24 Secret Words";
+"Wallet.Words.Text" = "Write down these 24 words in the correct order and store them in a secret place.\n\nUse these secret words to restore access to your wallet if you lose your passcode or device.";
+"Wallet.Words.Done" = "Done";
+"Wallet.Words.NotDoneTitle" = "Sure Done?";
+"Wallet.Words.NotDoneText" = "You didn't have enough time to write those words down.";
+"Wallet.Words.NotDoneOk" = "OK, Sorry";
+"Wallet.Words.NotDoneResponse" = "Apologies Accepted";
+"Wallet.Send.NetworkErrorTitle" = "No network";
+"Wallet.Send.NetworkErrorText" = "Couldn't send grams. Please make sure your internet connection is working and try again.";
+"Wallet.Send.ErrorNotEnoughFundsTitle" = "Insufficient Grams";
+"Wallet.Send.ErrorNotEnoughFundsText" = "Unfortunately, your transfer couldn't be completed. You don't have enough grams.";
+"Wallet.Send.ErrorInvalidAddress" = "Invalid wallet address. Please correct and try again.";
+"Wallet.Send.ErrorDecryptionFailed" = "Please make sure that your device has a passcode set in iOS Settings and try again.";
+"Wallet.Send.UninitializedTitle" = "Warning";
+"Wallet.Send.UninitializedText" = "This address belongs to an empty wallet. Are you sure you want to transfer grams to it?";
+"Wallet.Send.SendAnyway" = "Send Anyway";
+"Wallet.Receive.CreateInvoice" = "Create Invoice";
+"Wallet.Receive.CreateInvoiceInfo" = "You can specify the amount and purpose of the payment to save the sender some time.";
+
+"Conversation.WalletRequiredTitle" = "Gram Wallet Required";
+"Conversation.WalletRequiredText" = "This link can be used to send money on the TON Blockchain. To do this, you need to set up a Gram wallet first.";
+"Conversation.WalletRequiredNotNow" = "Not Now";
+"Conversation.WalletRequiredSetup" = "Set Up";
+
+"Wallet.Configuration.Title" = "Server Settings";
+"Wallet.Configuration.Apply" = "Save";
+"Wallet.Configuration.SourceHeader" = "SOURCE";
+"Wallet.Configuration.SourceURL" = "URL";
+"Wallet.Configuration.SourceJSON" = "JSON";
+"Wallet.Configuration.SourceInfo" = "Using a different configuration allows you to change Lite Server addresses.";
+"Wallet.Configuration.BlockchainIdHeader" = "BLOCKCHAIN ID";
+"Wallet.Configuration.BlockchainIdPlaceholder" = "Blockchain ID";
+"Wallet.Configuration.BlockchainIdInfo" = "This setting is for developers. Change it only if you are working on creating your own TON network.";
+"Wallet.Configuration.ApplyErrorTitle" = "Error";
+"Wallet.Configuration.ApplyErrorTextURLInvalid" = "The URL you have entered is invalid. Please try again.";
+"Wallet.Configuration.ApplyErrorTextURLUnreachable" = "There was an error while downloading configuration from %@\nPlease try again.";
+"Wallet.Configuration.ApplyErrorTextURLInvalidData" = "This blockchain configuration is invalid. Please try again.";
+"Wallet.Configuration.ApplyErrorTextJSONInvalidData" = "This blockchain configuration is invalid. Please try again.";
+"Wallet.Configuration.BlockchainNameChangedTitle" = "Warning";
+"Wallet.Configuration.BlockchainNameChangedText" = "Are you sure you want to change the blockchain ID? You don't need this unless you're testing your own TON network.\n\nIf you proceed, you will need to reconnect your wallet using 24 secret words.";
+"Wallet.Configuration.BlockchainNameChangedProceed" = "Proceed";
+
+"Wallet.CreateInvoice.Title" = "Create Invoice";
+
+"Wallet.Navigation.Close" = "Close";
+"Wallet.Navigation.Back" = "Back";
+"Wallet.Navigation.Done" = "Done";
+"Wallet.Navigation.Cancel" = "Cancel";
+"Wallet.Alert.OK" = "OK";
+"Wallet.Alert.Cancel" = "Cancel";
+
+"Wallet.Month.GenJanuary" = "January";
+"Wallet.Month.GenFebruary" = "February";
+"Wallet.Month.GenMarch" = "March";
+"Wallet.Month.GenApril" = "April";
+"Wallet.Month.GenMay" = "May";
+"Wallet.Month.GenJune" = "June";
+"Wallet.Month.GenJuly" = "July";
+"Wallet.Month.GenAugust" = "August";
+"Wallet.Month.GenSeptember" = "September";
+"Wallet.Month.GenOctober" = "October";
+"Wallet.Month.GenNovember" = "November";
+"Wallet.Month.GenDecember" = "December";
+"Wallet.Month.ShortJanuary" = "Jan";
+"Wallet.Month.ShortFebruary" = "Feb";
+"Wallet.Month.ShortMarch" = "Mar";
+"Wallet.Month.ShortApril" = "Apr";
+"Wallet.Month.ShortMay" = "May";
+"Wallet.Month.ShortJune" = "Jun";
+"Wallet.Month.ShortJuly" = "Jul";
+"Wallet.Month.ShortAugust" = "Aug";
+"Wallet.Month.ShortSeptember" = "Sep";
+"Wallet.Month.ShortOctober" = "Oct";
+"Wallet.Month.ShortNovember" = "Nov";
+"Wallet.Month.ShortDecember" = "Dec";
+
+"Wallet.Weekday.Today" = "Today";
+"Wallet.Weekday.Yesterday" = "Yesterday";
+
+"Wallet.Info.TransactionDateHeader" = "%1$@ %2$@";
+"Wallet.Info.TransactionDateHeaderYear" = "%1$@ %2$@, %3$@";
+
+"Wallet.UnknownError" = "An error occurred. Please try again later.";
+
+"Wallet.ContextMenuCopy" = "Copy";
+
+"Wallet.Time.PreciseDate_m1" = "Jan %1$@, %2$@ at %3$@";
+"Wallet.Time.PreciseDate_m2" = "Feb %1$@, %2$@ at %3$@";
+"Wallet.Time.PreciseDate_m3" = "Mar %1$@, %2$@ at %3$@";
+"Wallet.Time.PreciseDate_m4" = "Apr %1$@, %2$@ at %3$@";
+"Wallet.Time.PreciseDate_m5" = "May %1$@, %2$@ at %3$@";
+"Wallet.Time.PreciseDate_m6" = "Jun %1$@, %2$@ at %3$@";
+"Wallet.Time.PreciseDate_m7" = "Jul %1$@, %2$@ at %3$@";
+"Wallet.Time.PreciseDate_m8" = "Aug %1$@, %2$@ at %3$@";
+"Wallet.Time.PreciseDate_m9" = "Sep %1$@, %2$@ at %3$@";
+"Wallet.Time.PreciseDate_m10" = "Oct %1$@, %2$@ at %3$@";
+"Wallet.Time.PreciseDate_m11" = "Nov %1$@, %2$@ at %3$@";
+"Wallet.Time.PreciseDate_m12" = "Dec %1$@, %2$@ at %3$@";
+
+"Wallet.VoiceOver.Editing.ClearText" = "Clear text";
+
+"Wallet.Receive.ShareInvoiceUrlInfo" = "Share this link with other Gram wallet owners to receive %@ Grams from them.";
+
+"Settings.Wallet" = "Gram Wallet";
+"SettingsSearch.Synonyms.Wallet" = "TON Telegram Open Network Crypto";
+
+"Conversation.ClearCache" = "Clear Cache";
+"ClearCache.Description" = "Media files will be deleted from your phone, but available for re-downloading when necessary.";
+"ClearCache.FreeSpaceDescription" = "If you want to save space on your device, you don't need to delete anything.\n\nYou can use cache settings to remove unnecessary media — and re-download files if you need them again.";
+"ClearCache.FreeSpace" = "Free Space";
+"ClearCache.Success" = "**%@** freed on your %@!";
+"ClearCache.StorageUsage" = "Storage Usage";
+
+"Conversation.ScheduleMessage.SendWhenOnline" = "Send When Online";
+"ScheduledMessages.ScheduledOnline" = "Scheduled until online";
+
+"Conversation.SwipeToReplyHintTitle" = "Swipe To Reply";
+"Conversation.SwipeToReplyHintText" = "Swipe left on any message to reply to it.";
+
+"TwoFactorSetup.Intro.Title" = "Additional Password";
+"TwoFactorSetup.Intro.Text" = "You can set a password that will be\nrequired when you log in on a new device in addition to the code you get via SMS.";
+"TwoFactorSetup.Intro.Action" = "Set Additional Password";
+
+"TwoFactorSetup.Password.Title" = "Create Password";
+"TwoFactorSetup.Password.PlaceholderPassword" = "Password";
+"TwoFactorSetup.Password.PlaceholderConfirmPassword" = "Re-enter Password";
+"TwoFactorSetup.Password.Action" = "Create Password";
+
+"TwoFactorSetup.Email.Title" = "Recovery Email";
+"TwoFactorSetup.Email.Text" = "You can set a recovery email to be able to reset you password and restore access to your Telegram account.";
+"TwoFactorSetup.Email.Placeholder" = "Your email address";
+"TwoFactorSetup.Email.Action" = "Continue";
+"TwoFactorSetup.Email.SkipAction" = "Skip setting email";
+"TwoFactorSetup.Email.SkipConfirmationTitle" = "No, seriously.";
+"TwoFactorSetup.Email.SkipConfirmationText" = "If you forget your password, you will lose access to your Telegram account. There will be no way to restore it.";
+"TwoFactorSetup.Email.SkipConfirmationSkip" = "Skip";
+
+"TwoFactorSetup.EmailVerification.Title" = "Recovery Email";
+"TwoFactorSetup.EmailVerification.Text" = "Please enter code we've just emailed at %@";
+"TwoFactorSetup.EmailVerification.Placeholder" = "Code";
+"TwoFactorSetup.EmailVerification.Action" = "Continue";
+"TwoFactorSetup.EmailVerification.ChangeAction" = "Change Email";
+"TwoFactorSetup.EmailVerification.ResendAction" = "Re-send Code";
+
+"TwoFactorSetup.Hint.Title" = "Hint";
+"TwoFactorSetup.Hint.Text" = "You can create an optional hint for\nyour password.";
+"TwoFactorSetup.Hint.Placeholder" = "Hint (optional)";
+"TwoFactorSetup.Hint.Action" = "Continue";
+"TwoFactorSetup.Hint.SkipAction" = "Skip setting hint";
+
+"TwoFactorSetup.Done.Title" = "Password Set!";
+"TwoFactorSetup.Done.Text" = "This password will be required when you log in on a new device in addition to the code you get via SMS.";
+"TwoFactorSetup.Done.Action" = "Return to Settings";
+
+"AutoNightTheme.System" = "System";
+
+"ChatSettings.OpenLinksIn" = "Open Links in";
+"SettingsSearch.Synonyms.ChatSettings.OpenLinksIn" = "Browser";
+
+"WebBrowser.Title" = "Web Browser";
+"WebBrowser.DefaultBrowser" = "DEFAULT WEB BROWSER";
+"WebBrowser.InAppSafari" = "In-App Safari";
+
+"Widget.ApplicationLocked" = "Unlock the app to use the widget";
+
+"Group.ErrorSupergroupConversionNotPossible" = "Sorry, you are a member of too many groups and channels. Please leave some before creating a new one.";
+
+"ClearCache.StorageTitle" = "%@ STORAGE";
+"ClearCache.StorageCache" = "Telegram Cache";
+"ClearCache.StorageServiceFiles" = "Telegram Service Files";
+"ClearCache.StorageOtherApps" = "Other Apps";
+"ClearCache.StorageFree" = "Free";
+"ClearCache.ClearCache" = "Clear Telegram Cache";
+"ClearCache.Clear" = "Clear";
+"ClearCache.Forever" = "Forever";
+
+"ChatList.DeletedChats_1" = "Deleted 1 chat";
+"ChatList.DeletedChats_any" = "Deleted %@ chats";
+
+"Appearance.ColorThemeNight" = "COLOR THEME — AUTO-NIGHT MODE";
+
+"UserInfo.StartSecretChatConfirmation" = "Are you sure you want to start a secret chat with\n%@?";
+"UserInfo.StartSecretChatStart" = "Start";
+
+"Wallet.AccessDenied.Title" = "Please Allow Access";
+"Wallet.AccessDenied.Camera" = "TON Wallet needs access to your camera to take photos and videos.\n\nPlease go to Settings > Privacy > Camera and set TON Wallet to ON.";
+"Wallet.AccessDenied.Settings" = "Settings";
+
+"GroupInfo.ShowMoreMembers_0" = "%@ more";
+"GroupInfo.ShowMoreMembers_1" = "%@ more";
+"GroupInfo.ShowMoreMembers_2" = "%@ more";
+"GroupInfo.ShowMoreMembers_3_10" = "%@ more";
+"GroupInfo.ShowMoreMembers_many" = "%@ more";
+"GroupInfo.ShowMoreMembers_any" = "%@ more";
+
+"ContactInfo.Note" = "note";
+
+"Group.Location.CreateInThisPlace" = "Create a group in this place";
+
+"Theme.Colors.Accent" = "Accent";
+"Theme.Colors.Background" = "Background";
+"Theme.Colors.Messages" = "Messages";
+"Theme.Colors.ColorWallpaperWarning" = "Are you sure you want to change your chat wallpaper to a color?";
+"Theme.Colors.ColorWallpaperWarningProceed" = "Proceed";
+
+"ChatSettings.IntentsSettings" = "Share Sheet";
+"IntentsSettings.Title" = "Share Sheet";
+"IntentsSettings.MainAccount" = "Main Account";
+"IntentsSettings.MainAccountInfo" = "Choose an account for Siri and share suggestions.";
+"IntentsSettings.SuggestedChats" = "Suggested Chats";
+"IntentsSettings.SuggestedChatsContacts" = "Contacts";
+"IntentsSettings.SuggestedChatsSavedMessages" = "Saved Messages";
+"IntentsSettings.SuggestedChatsPrivateChats" = "Private Chats";
+"IntentsSettings.SuggestedChatsGroups" = "Groups";
+"IntentsSettings.SuggestedChatsInfo" = "Archived chats will not be suggested.";
+"IntentsSettings.SuggestBy" = "Suggest By";
+"IntentsSettings.SuggestByAll" = "All Sent Messages";
+"IntentsSettings.SuggestByShare" = "Only Shared Messages";
+"IntentsSettings.ResetAll" = "Reset All Share Suggestions";
+"IntentsSettings.Reset" = "Reset";
+
+"Conversation.SendingOptionsTooltip" = "Hold this button to schedule your message\nor send it without sound.";
+
+"Appearance.TextSizeSetting" = "Text Size";
+"Appearance.TextSize.Automatic" = "System";
+"Appearance.TextSize.Title" = "Text Size";
+"Appearance.TextSize.UseSystem" = "User System Text Size";
+"Appearance.TextSize.Apply" = "Set";
+
+"Shortcut.SwitchAccount" = "Switch Account";
+
+"Settings.Devices" = "Devices";
+"Settings.AddDevice" = "Scan QR";
+"AuthSessions.DevicesTitle" = "Devices";
+"AuthSessions.AddDevice" = "Scan QR";
+"AuthSessions.AddDevice.ScanInfo" = "Scan a QR code to log into\nthis account on another device.";
+"AuthSessions.AddDevice.ScanTitle" = "Scan QR Code";
+"AuthSessions.AddDevice.InvalidQRCode" = "Invalid QR Code";
+"AuthSessions.AddDeviceIntro.Title" = "Log in by QR Code";
+"AuthSessions.AddDeviceIntro.Text1" = "Download Telegram on your computer from [desktop.telegram.org]()";
+"AuthSessions.AddDeviceIntro.Text2" = "Run Telegram on your computer to get the QR code";
+"AuthSessions.AddDeviceIntro.Text3" = "Scan the QR code to connect your account";
+"AuthSessions.AddDeviceIntro.Action" = "Scan QR Code";
+"AuthSessions.AddedDeviceTitle" = "Login Successful";
+"AuthSessions.AddedDeviceTerminate" = "Terminate";
+
+"Map.SendThisPlace" = "Send This Place";
+"Map.SetThisPlace" = "Set This Place";
+"Map.AddressOnMap" = "Address On Map";
+"Map.PlacesNearby" = "Places Nearby";
+"Map.Home" = "Home";
+"Map.Work" = "Work";
+"Map.HomeAndWorkTitle" = "Home & Work Addresses";
+"Map.HomeAndWorkInfo" = "Telegram uses the Home and Work addresses from your Contact Card.\n\nKeep your Contact Card up to date for quick access to sending Home and Work addresses.";
+"Map.SearchNoResultsDescription" = "There were no results for \"%@\".\nTry a new search.";
+
+"ChatList.Search.ShowMore" = "Show more";
+"ChatList.Search.ShowLess" = "Show less";
+
+"AuthSessions.OtherDevices" = "The official Telegram App is available for iPhone, iPad, Android, macOS, Windows and Linux. [Learn More]()";
+
+"MediaPlayer.UnknownArtist" = "Unknown Artist";
+"MediaPlayer.UnknownTrack" = "Unknown Track";
+
+"Contacts.InviteContacts_1" = "Invite %@ Contact";
+"Contacts.InviteContacts_2" = "Invite %@ Contacts";
+"Contacts.InviteContacts_3_10" = "Invite %@ Contacts";
+"Contacts.InviteContacts_any" = "Invite %@ Contacts";
+"Contacts.InviteContacts_many" = "Invite %@ Contacts";
+"Contacts.InviteContacts_0" = "Invite %@ Contacts";
+
+"Theme.Context.ChangeColors" = "Change Colors";
+
+"EditTheme.ChangeColors" = "Change Colors";
+
+"Theme.Colors.Proceed" = "Proceed";
+
+"AuthSessions.AddDevice.UrlLoginHint" = "This code can be used to allow someone to log in to your Telegram account.\n\nTo confirm Telegram login, please go to Settings > Devices > Scan QR and scan the code.";
+
+"Appearance.RemoveThemeColor" = "Remove";
+"Appearance.RemoveThemeColorConfirmation" = "Remove Color";
+
+"WallpaperPreview.PatternTitle" = "Choose Pattern";
+"WallpaperPreview.PatternPaternDiscard" = "Discard";
+"WallpaperPreview.PatternPaternApply" = "Apply";
+
+"ChatContextMenu.TextSelectionTip" = "Hold a word, then move cursor to select more| text to copy.";
+
+"OldChannels.Title" = "Limit Reached";
+"OldChannels.NoticeTitle" = "Too Many Groups and Channels";
+"OldChannels.NoticeText" = "Sorry, you are member of too many groups and channels.\nPlease leave some before joining new one.";
+"OldChannels.NoticeCreateText" = "Sorry, you are member of too many groups and channels.\nPlease leave some before creating a new one.";
+"OldChannels.NoticeUpgradeText" = "Sorry, you are a member of too many groups and channels.\nFor technical reasons, you need to leave some first before changing this setting in your groups.";
+"OldChannels.ChannelsHeader" = "MOST INACTIVE";
+"OldChannels.Leave_1" = "Leave %@ Chat";
+"OldChannels.Leave_any" = "Leave %@ Chats";
+
+"OldChannels.ChannelFormat" = "channel, ";
+"OldChannels.GroupEmptyFormat" = "group, ";
+"OldChannels.GroupFormat_1" = "%@ member";
+"OldChannels.GroupFormat_any" = "%@ members";
+
+"OldChannels.InactiveWeek_1" = "inactive %@ week";
+"OldChannels.InactiveWeek_any" = "inactive %@ weeks";
+
+"OldChannels.InactiveMonth_1" = "inactive %@ month";
+"OldChannels.InactiveMonth_any" = "inactive %@ months";
+
+"OldChannels.InactiveYear_1" = "inactive %@ year";
+"OldChannels.InactiveYear_any" = "inactive %@ years";
+
+"PrivacySettings.WebSessions" = "Active Websites";
+
+"Appearance.ShareThemeColor" = "Share";
+
+"Theme.ThemeChanged" = "Color Theme Changed";
+"Theme.ThemeChangedText" = "You can change it back in\n[Settings > Appearance]().";
+
+"StickerPackActionInfo.AddedTitle" = "Stickers Added";
+"StickerPackActionInfo.AddedText" = "%@ has been added to your stickers.";
+"StickerPackActionInfo.RemovedTitle" = "Stickers Removed";
+"StickerPackActionInfo.ArchivedTitle" = "Stickers Archived";
+"StickerPackActionInfo.RemovedText" = "%@ is no longer in your stickers.";
